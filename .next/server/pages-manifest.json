@@ -1,0 +1,14 @@
+{
+  "/api/abs": "pages/api/abs.js",
+  "/api/api": "pages/api/api.js",
+  "/home/about": "pages/home/about.html",
+  "/home": "pages/home.js",
+  "/home/second": "pages/home/second.html",
+  "/": "pages/index.html",
+  "/views/1": "pages/views/1.html",
+  "/views": "pages/views.js",
+  "/_app": "pages/_app.js",
+  "/_error": "pages/_error.js",
+  "/_document": "pages/_document.js",
+  "/404": "pages/404.html"
+}

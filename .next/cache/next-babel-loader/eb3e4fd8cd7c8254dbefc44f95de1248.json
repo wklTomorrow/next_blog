@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { jsx as _jsx } from \"react/jsx-runtime\";\nimport { useRouter } from 'next/router';\n\nfunction About() {\n  const router = useRouter();\n  return /*#__PURE__*/_jsx(\"div\", {\n    onClick: () => router.push('/home'),\n    children: \"about\"\n  });\n}\n\nexport default About;","map":null,"metadata":{},"sourceType":"module"}

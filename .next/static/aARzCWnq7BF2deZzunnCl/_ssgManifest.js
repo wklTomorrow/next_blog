@@ -1,0 +1,1 @@
+self.__SSG_MANIFEST=new Set(["\u002Fhome","\u002Fviews"]);self.__SSG_MANIFEST_CB&&self.__SSG_MANIFEST_CB()
