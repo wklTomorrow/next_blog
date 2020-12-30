@@ -6,7 +6,7 @@ module.exports =
 /******/ 	// object to store loaded chunks
 /******/ 	// "0" means "already loaded"
 /******/ 	var installedChunks = {
-/******/ 		7: 0
+/******/ 		8: 0
 /******/ 	};
 /******/
 /******/ 	// The require function
@@ -49,7 +49,7 @@ module.exports =
 /******/
 /******/ 		// "0" is the signal for "already loaded"
 /******/ 		if(installedChunks[chunkId] !== 0) {
-/******/ 			var chunk = require("../" + ({}[chunkId]||chunkId) + "." + {"13":"3c7ad6a61a1a7bd8a304"}[chunkId] + ".js");
+/******/ 			var chunk = require("../" + ({}[chunkId]||chunkId) + "." + {"15":"3846ea140264f4505d8e"}[chunkId] + ".js");
 /******/ 			var moreModules = chunk.modules, chunkIds = chunk.ids;
 /******/ 			for(var moduleId in moreModules) {
 /******/ 				modules[moduleId] = moreModules[moduleId];
@@ -121,7 +121,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 5);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -270,14 +270,6 @@ module.exports = _interopRequireWildcard;
 
 /***/ }),
 
-/***/ 3:
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__("JN4l");
-
-
-/***/ }),
-
 /***/ "3WeD":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -331,6 +323,14 @@ function assign(target, ...searchParamsList) {
   });
   return target;
 }
+
+/***/ }),
+
+/***/ 5:
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__("JN4l");
+
 
 /***/ }),
 
@@ -549,7 +549,7 @@ function home_defineProperty(obj, key, value) { if (key in obj) { Object.defineP
 
 
 
-const DynamicComponent = dynamic_default()(() => __webpack_require__.e(/* import() */ 13).then(__webpack_require__.bind(null, "4MxY")), {
+const DynamicComponent = dynamic_default()(() => __webpack_require__.e(/* import() */ 15).then(__webpack_require__.bind(null, "4MxY")), {
   loadableGenerated: {
     webpack: () => [/*require.resolve*/("4MxY")],
     modules: ['./second.js']
@@ -570,13 +570,13 @@ function Home({
     name: 'test'
   });
   Object(external_react_["useEffect"])(async () => {
-    let res = await api.get('http://localhost:3000/getInfo');
+    let res = await api.get('http://127.0.0.1:3000/getInfo');
     setCurValue(value => home_objectSpread(home_objectSpread({}, value), res));
   }, []);
 
   var getInfo = async function () {
     console.log('执行');
-    let r = await api.get('http://localhost:3000/getInfo');
+    let r = await api.get('http://127.0.0.1:3000/getInfo');
   };
 
   return /*#__PURE__*/Object(jsx_runtime_["jsxs"])("div", {

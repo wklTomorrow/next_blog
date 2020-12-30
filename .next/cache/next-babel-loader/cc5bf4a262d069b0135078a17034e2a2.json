@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { jsxs as _jsxs } from \"react/jsx-runtime\";\n\nfunction Footer() {\n  var time = new Date().getFullYear();\n  return /*#__PURE__*/_jsxs(\"div\", {\n    children: [time, \"hello world\"]\n  });\n}\n\nexport default Footer;","map":null,"metadata":{},"sourceType":"module"}

@@ -88,16 +88,23 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 7);
+/******/ 	return __webpack_require__(__webpack_require__.s = 10);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 7:
+/***/ 10:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__("M19Y");
 
+
+/***/ }),
+
+/***/ "4Q3z":
+/***/ (function(module, exports) {
+
+module.exports = require("next/router");
 
 /***/ }),
 
@@ -116,19 +123,34 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getStaticProps", function() { return getStaticProps; });
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("F5FC");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("4Q3z");
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_1__);
+
 
 
 
 function ViewPages({
   posts
 }) {
+  const router = Object(next_router__WEBPACK_IMPORTED_MODULE_1__["useRouter"])();
+  const query = router.query;
+  console.log(query);
+
+  const goBack = () => {
+    router.push('/');
+  };
+
   return /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxs"])("div", {
     children: ["views-pages", /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("div", {
       children: posts[0]
+    }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("button", {
+      onClick: goBack,
+      children: "\u56DE\u9000"
     })]
   });
 } // // 此函数在构建时被调用
-// export async function getStaticPaths() {
+// export async function getStaticPaths(params) {
+//     console.log(params)
 //     return {
 //         paths: [
 //             {params: {id: 1}},
@@ -143,6 +165,7 @@ function ViewPages({
 async function getStaticProps({
   params
 }) {
+  console.log(params);
   const posts = [10];
   return {
     props: {

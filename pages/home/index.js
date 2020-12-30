@@ -15,7 +15,7 @@ function Home({posts}) {
         name: 'test'
     })
     useEffect(async () => {
-        let res = await axios.get('http://localhost:3000/getInfo')
+        let res = await axios.get('http://127.0.0.1:3000/getInfo')
         setCurValue((value) => ({
             ...value,
             ...res
@@ -23,7 +23,7 @@ function Home({posts}) {
     }, [])
     var getInfo = async function () {
         console.log('执行')
-        let r = await axios.get('http://localhost:3000/getInfo')
+        let r = await axios.get('http://127.0.0.1:3000/getInfo')
     }
     return (
         <div>

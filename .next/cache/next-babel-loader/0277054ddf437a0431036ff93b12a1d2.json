@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { jsx as _jsx } from \"react/jsx-runtime\";\n\nfunction HelloNext() {\n  return /*#__PURE__*/_jsx(\"div\", {\n    children: \"hello\"\n  });\n}\n\nexport default HelloNext;","map":null,"metadata":{},"sourceType":"module"}
